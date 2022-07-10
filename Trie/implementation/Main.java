@@ -22,6 +22,10 @@ public class Main
 		Trie t = new Trie();
 		t.insert("abc");
 		t.insert("abcdd");
+		
+		
+		System.out.println(t.countWord());
+
 		System.out.println(t.search("abc"));
 		System.out.println(t.search("abcdd"));
 		

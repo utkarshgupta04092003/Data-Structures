@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Graph{
     
     // n is the number of row of Adjeceancy matrix
@@ -18,7 +20,7 @@ public class Graph{
     
     
     // print the adjMatrix
-    private void printMat(){
+     void printMat(){
         for(int  i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 System.out.print(adjMat[i][j] + " ");
@@ -28,7 +30,7 @@ public class Graph{
         System.out.println();
     }
     
-    // Depth first traversal (not valid for disconnected graph)
+    // Depth first traversal 
     private void dfTraversalHelper(int currVer,boolean visited[]){
         
         System.out.print(currVer + " ");
@@ -48,7 +50,45 @@ public class Graph{
     }
     
     // breadth first traversal
-    
+     private void bfTraversal(int currVer,boolean visited[]){
+        Queue<Integer> q =  new LinkedList<Integer>();
+        
+        
+        q.add(currVer);
+        visited[currVer] = true;
+        
+
+        
+        while(!q.isEmpty()){
+            currVer = q.poll();
+            System.out.print(currVer+" ");
+            
+            for(int i=0;i<n;i++){
+                
+                if(adjMat[currVer][i] == 1 && visited[i] == false){
+                    q.add(i);
+                    visited[i] = true;
+                }
+            }
+        }
+        
+        
+        for(int i=0;i<n;i++){
+            if(visited[i] == false){
+                bfTraversal(i,visited);
+                visited[i] = true;
+            }
+        }
+        
+        
+    }
+    public void bfTraversal(){
+         
+        boolean visited[] = new boolean[adjMat.length];
+
+        bfTraversal(0,visited);
+    }
+   
     
     
 }

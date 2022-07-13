@@ -28,7 +28,7 @@ public class Graph{
         System.out.println();
     }
     
-    // Depth first traversal 
+    // Depth first traversal (not valid for disconnected graph)
     private void dfTraversalHelper(int currVer,boolean visited[]){
         
         System.out.print(currVer + " ");

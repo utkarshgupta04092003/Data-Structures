@@ -15,6 +15,7 @@ dfTraversal()- Traverse the graph
 printMat() - print the adjecency matrix
 
 ********************************************/
+// Graph implementation
 public class Main
 {
 	public static void main(String[] args) {
@@ -33,5 +34,6 @@ public class Main
 		
 		g.makeEdge(0,1);
 		g.dfTraversal();
+		g.bfTraversal();
 	}
 }

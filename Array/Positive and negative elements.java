@@ -2,7 +2,7 @@
 
 Problem link - https://practice.geeksforgeeks.org/problems/positive-and-negative-elements4613/1?page=1&difficulty[]=-1&category[]=Arrays&sortBy=latest
 
-[Problem Link ](https://practice.geeksforgeeks.org/problems/positive-and-negative-elements4613/1?page=1&difficulty[]=-1&category[]=Arrays&sortBy=latest)
+[Problem Link ]('https://practice.geeksforgeeks.org/problems/positive-and-negative-elements4613/1?page=1&difficulty[]=-1&category[]=Arrays&sortBy=latest')
 
 
 Given an array arr[ ] containing equal number of positive 
